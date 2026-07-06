@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qr-code generator</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         const downloadqr = document.getElementById("downloadqr");
         let generatedQrUrl = "";
 
-        function generateqr(){
+        function generateqr() {
             const qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(qrtext.value);
 
             generatedQrUrl = qrUrl;
@@ -45,12 +45,6 @@
             link.click();
             URL.revokeObjectURL(downloadUrl);
         }
-        
-
-
-
-        
     </script>
-    
 </body>
 </html>
